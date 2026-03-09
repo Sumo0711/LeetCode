@@ -45,12 +45,3 @@ class Solution:
             A[k] = right[j]
             j += 1
             k += 1
-
-# 測試
-if __name__ == "__main__":
-    solution = Solution()
-    num = [5,1,1,2,0,0]
-    print(f"before: {num}")
-    
-    after_num = solution.sortArray(num)
-    print(f"after: {after_num}")

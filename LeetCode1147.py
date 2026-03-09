@@ -1,5 +1,5 @@
 class Solution:
-    def lon(self, text: str) -> int:
+    def longestDecomposition(self, text: str) -> int:
         res = 0
         Lstr, Rstr = "", ""
         Lidx, Ridx = 0, len(text) - 1
@@ -20,11 +20,3 @@ class Solution:
             res += 1
             
         return res
-
-if __name__ == "__main__":
-    sol = Solution()
-    
-    txt = "antaprezatepzapreanta"
-    result = sol.lon(txt)
-    print(f"Input: {txt}")
-    print(f"Output: {result}")
